@@ -15,12 +15,14 @@ body{
   padding: 1rem;
   height: 100vh;
 
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .pokemons{
   padding: 0;
   margin: 0;
+
+  background-color: #fff;
   
   list-style: none;
   
@@ -225,15 +227,71 @@ body{
 
   .pokemons{
     max-width: 50%;
-    border: 1px solid black;
+    
+    border-radius: 1rem;
+    /* border: 1px solid black; */
     grid-template-columns: 1fr 1fr;
   }
 
   #pokeInfo{
-    width: 100%;
-    max-width: 50%;
-    height: auto;
-    border: 1px solid black;
-    border-radius: 1rem;
+    width: 50%;
+    /* max-width: 50%; */
+    max-height: 50%;
+    /* height: auto; */
+    border-radius: 2.5rem;
+  }
+
+  #pokeInfo .pokeBasicInfo{
+    /* margin: .5rem; */
+    padding: 2rem 1rem 0;
+
+    /* width: 100%; */
+    max-width: 100%;
+    /* max-height: 50%; */
+    height: 50%;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pokeInfo .pokeBasicInfo .number{
+    text-align: right;
+  }
+
+  #pokeInfo .pokeBasicInfo .types{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    gap: .62rem;
+  }
+
+  #pokeInfo .pokeBasicInfo .types .type{
+    padding: .25rem .5rem;
+    background-color: #61e1ca;
+    border-radius: 1.35rem;
+    font-size: .825rem;
+    color: #fff;
+  }
+
+  #pokeInfo .pokeBasicInfo img{
+    max-width: 100%;
+    height: 170px;
+  }
+
+  #pokeInfo .pokeInfo{
+    /* width: 100%; */
+    max-width: 100%;
+    /* height: auto; */
+    height: 50%;
+
+    background-color: #fff;
+
+    border-radius: 2.5rem;
   }
 }
